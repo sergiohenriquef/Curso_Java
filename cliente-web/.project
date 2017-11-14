@@ -3,6 +3,8 @@
 	<name>cliente-web</name>
 	<comment></comment>
 	<projects>
+		<project>cliente-model</project>
+		<project>cliente-dao</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
