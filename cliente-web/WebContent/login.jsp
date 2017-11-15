@@ -33,8 +33,8 @@
 			
 		</form>
 		
-			<div class="container">
-				${erro-login}
+			<div class="alert alert-danger ${empty erroLogin ? 'none' : ''}" >
+  				<center><strong>${erroLogin} </strong></center>
 			</div>
 
 	</div>

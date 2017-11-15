@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 			dispatcher = request.getRequestDispatcher("/index.jsp");
 		else {
 			dispatcher = request.getRequestDispatcher("/login.jsp");
-			request.setAttribute("erro-login", "Usuario ou senha informados incorretamente.");
+			request.setAttribute("erroLogin", "Usuario ou senha informados incorretamente.");
 		}
 		
 		dispatcher.forward(request, response);
