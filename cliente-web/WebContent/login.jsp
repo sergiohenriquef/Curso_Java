@@ -11,6 +11,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,18 +30,33 @@
 				<input type="password" id="inputPassword" name="txtSenha" 
 				class="form-control" placeholder="Senha" required />
 	
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+			<button class="btn btn-lg btn-primary btn-block btn-login" type="submit">Login</button>
 			
 		</form>
-		
+				
 			<div class="alert alert-danger ${empty erroLogin ? 'none' : ''}" >
-  				<center><strong>${erroLogin} </strong></center>
+  				<center><strong>${erroLogin}</strong></center>
 			</div>
 
 	</div>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

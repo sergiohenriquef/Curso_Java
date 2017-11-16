@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+<%@ page language="java" import="java.util.List" %>
+<%@ page language="java" import="br.com.cliente.model.Cliente" %>
+	
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -58,39 +63,47 @@
 				<a href="manutencao.jsp" class="btn btn-primary pull-right h2">Novo Item</a>
 			</div>			
 		</div>
-
+			<%
+				List<Cliente> lista = (List<Cliente>) request.getAttribute("clientes");
+			%>
 
 		<hr />
 		<div id="list" class="row">
-
+		
+		
 			<div class="table-responsive col-md-12">
+		
 				<table class="table table-striped" cellspacing="0" cellpadding="0">
 					<thead>
 						<tr>
 							<th>ID</th>
-							<th>Nome</th>
+							<th>Nome Completo</th>
+							<th>Idade</th>
 							<th class="actions">Ações</th>
 						</tr>
 					</thead>
 					<tbody>
+						
+						<%
+							for(Cliente item : lista) {
+						%>																	
 						<tr>
-							<td>1</td>
-							<td>Jan Nascimento</td>							
-							<td class="actions">
-								<a class="btn btn-warning btn-xs" href="manutencao.jsp">Editar</a> 
-								<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Cliente 2</td>							
+							<td><%= item.getId() %></td>
+							<td><%= item.getNomeCompleto() %></td>
+							<td><%= item.getIdade() %></td>							
 							<td class="actions">
 								<a class="btn btn-warning btn-xs" href="manutencao.jsp">Editar</a> 
 								<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
 							</td>
 						</tr>						
+						<% 
+						} 						
+						%>	
+														
 					</tbody>
 				</table>
+				
+				
 			</div>
 
 		</div>

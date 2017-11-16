@@ -40,12 +40,11 @@ public class LoginServlet extends HttpServlet {
 
 		RequestDispatcher dispatcher = null;
 		if (autenticado)
-			dispatcher = request.getRequestDispatcher("/index.jsp");
+			dispatcher = request.getRequestDispatcher("/PrincipalServlet");
 		else {
 			dispatcher = request.getRequestDispatcher("/login.jsp");
 			request.setAttribute("erroLogin", "Usuario ou senha informados incorretamente.");
-		}
-		
+		}		
 		dispatcher.forward(request, response);
 
 	}
