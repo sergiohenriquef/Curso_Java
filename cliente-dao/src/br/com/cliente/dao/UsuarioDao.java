@@ -15,6 +15,7 @@ public class UsuarioDao implements IDefaultDao {
 		mockUsuarios.add(new Usuario("Ismael", "123"));
 	}
 
+	
 	@Override
 	public void insert() {		
 	}
