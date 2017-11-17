@@ -1,0 +1,26 @@
+Pesquisar Clientes:
+
+Obs.: Definir o parametro de pesquisa.
+
+1 - Alterar a pagina index.jsp para colocar o botao de pesquisar dentro de um form.
+
+2 - Criar um Servlet de Pesquisa de Clientes
+
+3 - Invocar a DAO para recuperar a lista completa de clientes.
+
+4 - Procurar na lista os itens que possuem o parametro de pesquisa.
+
+5 - Retornar uma lista com os itens que batem com o parametro de pesquisa.
+	Ex.: parametro de pesquisa: Jan
+		Retorno:
+			Jandeilson
+			Jandeilson 2
+
+6 - Armazenar como atributo do Request o retorno.
+	Obs.: O nome do atributo esperado deve ser o mesmo que foreach espera.
+	Ex.: <c:forEach items="${clientes}" var="item" >
+		Espera clientes, entao armazenar clientes;
+
+7 - Encaminhar para a pagina index novamente.
+
+===========================================================================
