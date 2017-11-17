@@ -1,6 +1,4 @@
-//teste
 package br.com.cliente.dao;
-//Teste GIT
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,12 +12,6 @@ public class ClienteDao implements IDefaultDao {
 	public ClienteDao() {
 		initMock();
 	}
-	
-	
-	
-	
-	
-	
 	
 	
 	private void initMock() {

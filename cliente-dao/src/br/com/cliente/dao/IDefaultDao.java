@@ -1,4 +1,3 @@
-//teste git hub
 package br.com.cliente.dao;
 
 import java.util.List;
