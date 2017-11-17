@@ -12,7 +12,8 @@ public class ClienteDao implements IDefaultDao {
 	public ClienteDao() {
 		initMock();
 	}
-
+	
+	
 	private void initMock() {
 		clientes = new ArrayList<Cliente>();
 		clientes.add(new Cliente(1, "Jandeilson", "Nascimento", 30, "99999"));
