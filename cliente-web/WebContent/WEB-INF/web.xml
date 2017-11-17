@@ -17,6 +17,13 @@
 		<servlet-name>PrincipalServlet</servlet-name>
 		<servlet-class>br.com.clienteweb.controller.PrincipalServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LoginServletCookie</display-name>
+		<servlet-name>LoginServletCookie</servlet-name>
+		<servlet-class>br.com.clienteweb.controller.LoginServletCookie</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
@@ -25,9 +32,14 @@
 		<servlet-name>PrincipalServlet</servlet-name>
 		<url-pattern>/PrincipalServlet</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServletCookie</servlet-name>
+		<url-pattern>/LoginServletCookie</url-pattern>
+	</servlet-mapping>
 
 	<welcome-file-list>
-		<welcome-file>LoginServlet</welcome-file>
+ 		<welcome-file>LoginServlet</welcome-file>  <!--  Utiliza Sessao  -->
+<!-- 		<welcome-file>LoginServletCookie</welcome-file> -->
 	</welcome-file-list>
 
 
