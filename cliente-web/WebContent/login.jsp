@@ -31,13 +31,13 @@
 				class="form-control" placeholder="Senha" required />
 	
 			<button class="btn btn-lg btn-primary btn-block btn-login" type="submit">Login</button>
-			
+			 
 		</form>
 				
 			<div class="alert alert-danger ${empty erroLogin ? 'none' : ''}" >
   				<center><strong>${erroLogin}</strong></center>
 			</div>
-
+ 
 	</div>
 	
 
