@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
 			}
 		}
 
+		
 		RequestDispatcher dispatcher = null;
 		if (autenticado)
 			dispatcher = request.getRequestDispatcher("/PrincipalServlet");
