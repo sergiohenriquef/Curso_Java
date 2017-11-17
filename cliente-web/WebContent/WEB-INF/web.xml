@@ -27,7 +27,8 @@
 	</servlet-mapping>
 
 	<welcome-file-list>
-		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>LoginServlet</welcome-file>
 	</welcome-file-list>
+
 
 </web-app>

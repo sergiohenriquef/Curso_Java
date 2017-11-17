@@ -36,25 +36,38 @@
 
 	<div id="main" class="container-fluid">
 		<h3 class="page-header">Adicionar Cliente</h3>
+		
+		
 		<form action="index.jsp">
 			<div class="row">
+			
 				<div class="form-group col-md-4">
-					<label for="exampleInputEmail1">Id</label> <input
-						type="email" class="form-control" id="exampleInputEmail1"
-						placeholder="Digite o valor">
+					<label for="txtNome">Nome</label> 
+					<input	type="text" class="form-control" id="txtNome" name="txtNome"
+						placeholder="Digite o Nome">
 				</div>
+				
 				<div class="form-group col-md-4">
-					<label for="exampleInputEmail1">Nome</label> <input
-						type="email" class="form-control" id="exampleInputEmail1"
-						placeholder="Digite o nome">
+					<label for="txtSobrenome">Sobrenome:</label> 
+					<input type="text" class="form-control" id="txtSobrenome"
+						name="txtSobrenome"	placeholder="Digite o nome">
 				</div>
+				
+				<div class="form-group col-md-4">
+					<label for="txtIdade">Idade:</label> 
+					<input type="text" class="form-control" id="txtIdade"
+						name="txtIdade"	placeholder="Digite o nome">
+				</div>
+				
 			</div>
+			
 			<div class="row">
 				<div class="col-md-12">
 					<button type="submit" class="btn btn-primary">Salvar</button>
 					<a href="index.jsp" class="btn btn-default">Cancelar</a>
 				</div>
 			</div>
+			
 		</form>
 		
 		
