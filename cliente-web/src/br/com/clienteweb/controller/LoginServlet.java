@@ -42,9 +42,12 @@ public class LoginServlet extends HttpServlet {
 			for (Usuario item : lista) {
 				if (item.getUsuario().equals(usuario) && item.getSenha().equals(senha)) {
 					autenticado = true;
+					request.removeAttribute("erroLogin");
 					break;
-				}
+				} else
+					request.setAttribute("erroLogin", "Usuario ou senha informados incorretamente.");
 			}
+			
 			
 			RequestDispatcher dispatcher = obterProximaPagina(autenticado, request);
 			dispatcher.forward(request, response);			
@@ -57,13 +60,12 @@ public class LoginServlet extends HttpServlet {
 		RequestDispatcher dispatcher = null;
 		
 		if (oCaraDigitouAsenhaUsuarioCerto) {
-			dispatcher = request.getRequestDispatcher("/PrincipalServlet");			
+			dispatcher = request.getRequestDispatcher("/index");			
 			HttpSession sessao = request.getSession();
 			sessao.setAttribute("estaAutenticado", oCaraDigitouAsenhaUsuarioCerto);
 		}
 		else {
 			dispatcher = request.getRequestDispatcher("/login.jsp");
-			request.setAttribute("erroLogin", "Usuario ou senha informados incorretamente.");
 		}		
 		
 		return dispatcher;

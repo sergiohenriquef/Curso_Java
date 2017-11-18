@@ -48,21 +48,28 @@
 		<div id="top" class="row">			
 			<div class="col-sm-3">
 				<h2>Clientes Web</h2>
-			</div>			
-			<div class="col-sm-6">
-				<div class="input-group h2">
-					<input name="data[search]" class="form-control" id="search"
-						type="text" placeholder="Pesquisar Clientes"> <span
-						class="input-group-btn">
-						<button class="btn btn-primary" type="submit" style="height: 34px;">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
+			</div>
+			
+			<form action="${pageContext.request.contextPath}/index" method="post">	
+				<div class="col-sm-6">
+					<div class="input-group h2">
+						<input name="txtPesquisa" class="form-control" id="search"
+							type="text" placeholder="Pesquisar Clientes" value="${filtro}"> <span
+							class="input-group-btn">
+							<button class="btn btn-primary" type="submit" style="height: 34px;">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</div>		
+			</form>	
+			
+			<form action="manutencao" method="get">
+				<div class="col-sm-3">
+					<input type="submit" class="btn btn-primary pull-right h2" value="Adicionar" />
 				</div>
-			</div>			
-			<div class="col-sm-3">
-				<a href="manutencao.jsp" class="btn btn-primary pull-right h2">Adicionar</a>
-			</div>			
+			</form>
+						
 		</div>
 	
 

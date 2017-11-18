@@ -44,7 +44,7 @@
 				<div class="form-group col-md-4">
 					<label for="txtNome">Nome</label> 
 					<input	type="text" class="form-control" id="txtNome" name="txtNome"
-						placeholder="Digite o Nome">
+						placeholder="Digite o Nome" value="${cliente.nome }">
 				</div>
 				
 				<div class="form-group col-md-4">

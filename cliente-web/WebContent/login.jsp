@@ -18,7 +18,7 @@
 
 	<div class="container">
 
-		<form class="form-signin" action="/cliente-web/LoginServlet" method="post">
+		<form class="form-signin" action="/cliente-web/login" method="post">
 		
 			<h2 class="form-signin-heading">Login</h2>
 			
