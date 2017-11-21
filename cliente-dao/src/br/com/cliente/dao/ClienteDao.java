@@ -6,6 +6,15 @@ import java.util.List;
 import br.com.cliente.model.Cliente;
 
 public class ClienteDao implements IDefaultDao {
+	
+	private static String urlConnection = "jdbc:sqlserver://vmdbsjan.database.windows.net:1433;"
+			+ "database=db_cursos;"
+			+ "user=jan@vmdbsjan;"
+			+ "password=jnasci@01;"
+			+ "encrypt=false;"
+			+ "trustServerCertificate=false;"
+			+ "hostNameInCertificate=*.database.windows.net;"
+			+ "loginTimeout=30";
 
 	private List<Cliente> clientes;
 
