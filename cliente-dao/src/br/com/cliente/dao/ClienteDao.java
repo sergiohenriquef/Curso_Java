@@ -11,6 +11,8 @@ public class ClienteDao implements IDefaultDao {
 	//jan
 	//jnasci@01
 	
+	//com.microsoft.sqlserver.jdbc.SQLServerDriver
+	
 	private static String urlConnection = "jdbc:sqlserver://vmdbsjan.database.windows.net:1433;"
 			+ "database=db_cursos;"
 			+ "user=jan@vmdbsjan;"
