@@ -7,6 +7,10 @@ import br.com.cliente.model.Cliente;
 
 public class ClienteDao implements IDefaultDao {
 	
+	//vmdbsjan.database.windows.net
+	//jan
+	//jnasci@01
+	
 	private static String urlConnection = "jdbc:sqlserver://vmdbsjan.database.windows.net:1433;"
 			+ "database=db_cursos;"
 			+ "user=jan@vmdbsjan;"
