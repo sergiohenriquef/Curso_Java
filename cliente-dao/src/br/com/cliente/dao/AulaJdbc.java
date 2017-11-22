@@ -1,21 +1,13 @@
 package br.com.cliente.dao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import br.com.cliente.dao.base.FabricaDeConexao;
+
 public class AulaJdbc {
 	
-	private static String urlConnection = "jdbc:sqlserver://vmdbsjan.database.windows.net:1433;"
-			+ "database=db_cursos;"
-			+ "user=jan@vmdbsjan;"
-			+ "password=jnasci@01;"
-			+ "encrypt=false;"
-			+ "trustServerCertificate=false;"
-			+ "hostNameInCertificate=*.database.windows.net;"
-			+ "loginTimeout=30";
 	
 	public static void main(String[] args) throws Exception  {
 		
@@ -30,12 +22,7 @@ public class AulaJdbc {
 		
 		System.out.println("Iniciando select");
 		
-		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");		
-		Connection conexaoComMeuBanco = DriverManager.getConnection(urlConnection);
-		
-		System.out.println("Conexao realizada com sucesso. Realizando Select");
-		
-		PreparedStatement statement = conexaoComMeuBanco
+		PreparedStatement statement = FabricaDeConexao.getConexao()
 				.prepareStatement("select * from tb_cliente");
 		
 		ResultSet result =  statement.executeQuery();
@@ -54,21 +41,16 @@ public class AulaJdbc {
 			
 		}
 		
-		conexaoComMeuBanco.close();	
+		FabricaDeConexao.fecharConexao();
 		
 	}
 	
-	private static void insert() throws ClassNotFoundException, SQLException {
+	private static void insert() throws SQLException, ClassNotFoundException    {
 		
 		System.out.println("Iniciando insert");
-		
-		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		Connection conexaoComMeuBanco = DriverManager.getConnection(urlConnection);		
-		
-		System.out.println("Realizando insert");
-		
+			
 		PreparedStatement statement = 
-						conexaoComMeuBanco.prepareStatement("INSERT INTO "
+						FabricaDeConexao.getConexao().prepareStatement("INSERT INTO "
 						+ "tb_cliente (nome, ultimo_nome, idade, usuario, senha)"
 						+ "VALUES (?, ?, ?, ?, ?)");
 		
@@ -80,8 +62,7 @@ public class AulaJdbc {
 		
 		statement.execute();
 		
-		conexaoComMeuBanco.close();
-		
+		FabricaDeConexao.fecharConexao();		
 	}
 	
 	
