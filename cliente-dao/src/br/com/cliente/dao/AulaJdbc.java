@@ -14,7 +14,7 @@ public class AulaJdbc {
 		System.out.println("Iniciando execucao");
 		
 		insert();
-		
+			
 		select();	
 	}
 	
