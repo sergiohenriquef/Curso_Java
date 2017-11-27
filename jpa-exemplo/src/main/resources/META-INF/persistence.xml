@@ -11,7 +11,7 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 		<!-- Aqui são listadas todas as entidades -->
-<!-- 		<class>br.com.jpaexemplo.entity.Cliente</class> -->
+		<class>br.com.jpa.entity.Cliente</class>
 
 		<properties>
 
