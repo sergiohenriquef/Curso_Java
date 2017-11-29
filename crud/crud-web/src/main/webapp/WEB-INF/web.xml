@@ -21,13 +21,15 @@
 		<param-name>tiles-definitions</param-name>
 		<param-value>
 			/WEB-INF/tiles.xml,
-			/WEB-INF/config/tiles-cliente.xml
+			/WEB-INF/config/cliente/tiles-cliente.xml
 		</param-value>
 	</context-param>	
 	<context-param>
 		<param-name>javax.faces.CONFIG_FILES</param-name>
 		<param-value>
-			/WEB-INF/faces-config.xml
+			/WEB-INF/faces-config.xml,
+			/WEB-INF/config/cliente/faces-managed-beans-cliente.xml,
+			/WEB-INF/config/cliente/faces-navigation-cliente.xml
 		</param-value>
 	</context-param>
 	

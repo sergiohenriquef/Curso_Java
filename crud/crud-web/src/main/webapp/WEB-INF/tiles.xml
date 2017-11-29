@@ -15,10 +15,8 @@
 		</putList>
 
 		<putList name="css_infra">
-			<item value="bootstrap" link="app/libs/css/bootstrap.min.css"
-				tooltip="screen, print" />
-			<item value="bootstrapTheme" link="app/libs/css/bootstrap-theme.min.css"
-				tooltip="screen, print" />
+			<item value="bootstrap" link="app/libs/css/bootstrap.min.css" tooltip="screen, print" />
+			<item value="bootstrapTheme" link="app/libs/css/bootstrap-theme.min.css" tooltip="screen, print" />
 		</putList>
 
 		<putList name="js_infra">
