@@ -1,0 +1,13 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="cliente.tiles" extends="nib.main">
+			
+		<put name="body" value="/WEB-INF/jsp/cliente.jsp" />
+		
+	</definition>  
+
+
+</tiles-definitions>

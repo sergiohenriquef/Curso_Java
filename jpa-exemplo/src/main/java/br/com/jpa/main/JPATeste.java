@@ -9,11 +9,12 @@ public class JPATeste {
 	public static void main(String[] args) {
 
 		Cliente clienteASalvar = new Cliente();
+		clienteASalvar.setId(0);
 		clienteASalvar.setIdade(30);
-		clienteASalvar.setNome("Jan");
-		clienteASalvar.setUltimo_nome("Nascimento");
-		clienteASalvar.setUsuario("jbnascimento");
-		clienteASalvar.setSenha("123456");
+		clienteASalvar.setNome("Ismael");
+		clienteASalvar.setUltimo_nome("Xavier");
+		clienteASalvar.setUsuario("ismael");
+		clienteASalvar.setSenha("123");
 
 		System.out.println("Salvando Registro");
 		

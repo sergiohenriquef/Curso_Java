@@ -1,0 +1,32 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="nib.main" path="/WEB-INF/jsp/template/main.jsp">
+
+		<put name="messageBundle" value="" />
+		<put name="body" value="" />
+
+		<putList name="css">
+		</putList>
+
+		<putList name="js">
+		</putList>
+
+		<putList name="css_infra">
+			<item value="bootstrap" link="app/libs/css/bootstrap.min.css"
+				tooltip="screen, print" />
+			<item value="bootstrapTheme" link="app/libs/css/bootstrap-theme.min.css"
+				tooltip="screen, print" />
+		</putList>
+
+		<putList name="js_infra">
+			<item value="bootstrap" link="app/libs/js/bootstrap.min.js" />
+			<item value="JQuery" link="app/libs/js/jquery.min.js" />
+		</putList>
+
+	</definition>
+
+
+</tiles-definitions>
