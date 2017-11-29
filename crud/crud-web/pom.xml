@@ -99,12 +99,6 @@
 			<artifactId>richfaces-ui</artifactId>
 			<version>3.1.6.GA</version>
 		</dependency>
-		<dependency>
-			<groupId>net.bootsfaces</groupId>
-			<artifactId>bootsfaces</artifactId>
-			<version>0.6.0</version>
-		</dependency>
-
 
 		<dependency>
 			<groupId>struts</groupId>

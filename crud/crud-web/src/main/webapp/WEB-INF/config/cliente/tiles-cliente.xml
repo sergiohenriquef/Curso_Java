@@ -4,9 +4,10 @@
 <tiles-definitions>
 
 	<definition name="cliente.tiles" extends="nib.main">
-			
+				
+		<put name="subtitulo" value="Pagina Inicial" />
 		<put name="body" value="/WEB-INF/jsp/cliente.jsp" />
-		
+			
 	</definition>  
 
 

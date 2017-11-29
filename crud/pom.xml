@@ -15,14 +15,12 @@
 	<name>Projeto Final</name>
 	<description>Projeto Final do Curso de Java Web</description>
 
-
 	<modules>
 		<module>crud-web</module>
 		<module>crud-dao</module>
 		<module>crud-entity</module>
 		<module>crud-service</module>
 	</modules>
-
 
 	<repositories>
 		<repository>

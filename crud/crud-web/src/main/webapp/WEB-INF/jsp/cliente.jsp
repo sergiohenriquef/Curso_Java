@@ -6,3 +6,4 @@
 <%@ taglib uri="http://myfaces.apache.org/tomahawk" prefix="t" %>
 <%@ taglib prefix="a4j" uri="http://richfaces.org/a4j" %>
 
+TESTE
