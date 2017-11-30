@@ -11,6 +11,14 @@
 	<name>Projeto Web Final</name>
 	<description>Projeto Final Web Final</description>
 
+	<properties>
+		<jsf-myfaces.version>1.2.10</jsf-myfaces.version>
+		<jsf-mojarra.version>1.2_15</jsf-mojarra.version>
+		<openwebbeans.version>1.1.0</openwebbeans.version>
+		<codi.version>1.0.1</codi.version>
+		<maven.jetty.plugin.version>6.1.22</maven.jetty.plugin.version>
+	</properties>
+
 	<dependencies>
 
 		<dependency>
@@ -25,6 +33,43 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- OpenWebBeans -->
+		<dependency>
+			<groupId>org.apache.openwebbeans</groupId>
+			<artifactId>openwebbeans-impl</artifactId>
+			<version>${openwebbeans.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.openwebbeans</groupId>
+			<artifactId>openwebbeans-jsf12</artifactId>
+			<version>${openwebbeans.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.openwebbeans</groupId>
+			<artifactId>openwebbeans-web</artifactId>
+			<version>${openwebbeans.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.openwebbeans</groupId>
+			<artifactId>openwebbeans-spi</artifactId>
+			<version>${openwebbeans.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.openwebbeans</groupId>
+			<artifactId>openwebbeans-resource</artifactId>
+			<version>${openwebbeans.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>commons-beanutils</groupId>
@@ -115,7 +160,7 @@
 			<groupId>myfaces</groupId>
 			<artifactId>tomahawk</artifactId>
 			<version>1.1.1</version>
-		</dependency>				
+		</dependency>
 
 	</dependencies>
 

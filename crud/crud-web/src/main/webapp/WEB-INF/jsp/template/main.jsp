@@ -55,6 +55,10 @@
 	</head>
 
 	<body>
+	
+		<t:inputText styleClass="form-control" id="txtPesquisa2" value="">
+			<t:outputText styleClass="input-group-btn" />
+		</t:inputText>
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">

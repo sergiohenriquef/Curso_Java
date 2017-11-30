@@ -21,8 +21,8 @@
 		</putList>
 
 		<putList name="js_infra">
-			<item value="bootstrap" link="app/libs/js/bootstrap.min.js" />
 			<item value="JQuery" link="app/libs/js/jquery.min.js" />
+			<item value="bootstrap" link="app/libs/js/bootstrap.min.js" />			
 		</putList>
 
 	</definition>
