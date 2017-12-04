@@ -5,12 +5,27 @@
 <%@ taglib uri="http://myfaces.apache.org/tomahawk" prefix="t"%>
 
 
-<t:div styleClass="col-sm-6">
-	<t:div styleClass="input-group h2">
-	
-		<t:inputText styleClass="form-control" id="txtPesquisa" value="">
-			<t:outputText styleClass="input-group-btn" />
-		</t:inputText>
-		
+<t:div styleClass="container">
+
+	<t:div styleClass="row">
+
+		<h:form styleClass="col s12">
+
+			<t:div styleClass="row">
+
+				<t:div styleClass="input-field col s12">
+					<t:inputText id="nomePesquisa" value="">
+					</t:inputText>
+
+					<t:commandButton action="" value="Pesquisar"
+						styleClass="waves-effect waves-light btn" />
+
+				</t:div>
+
+			</t:div>
+
+		</h:form>
+
 	</t:div>
+
 </t:div>

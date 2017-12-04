@@ -18,11 +18,15 @@
 		<putList name="css_infra">
 			<item value="bootstrap" link="app/libs/css/bootstrap.min.css" tooltip="screen, print" />
 			<item value="bootstrapTheme" link="app/libs/css/bootstrap-theme.min.css" tooltip="screen, print" />
+			<item value="materialaze" link="app/libs/css/materialize.min.css" tooltip="screen, print" />
+			<item value="materialaze" link="app/libs/css/geral.css" tooltip="screen, print" />
 		</putList>
 
 		<putList name="js_infra">
 			<item value="JQuery" link="app/libs/js/jquery.min.js" />
-			<item value="bootstrap" link="app/libs/js/bootstrap.min.js" />			
+			<item value="bootstrap" link="app/libs/js/bootstrap.min.js" />
+			<item value="materialaze" link="app/libs/js/materialize.min.js" />
+			<item value="materialaze" link="app/libs/js/geral.js" />			
 		</putList>
 
 	</definition>
